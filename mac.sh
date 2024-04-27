@@ -4,7 +4,7 @@ tar -xzf node_exporter-1.4.0.darwin-amd64.tar.gz
 mkdir -p /usr/local/bin
 cp -n node_exporter-1.4.0.darwin-amd64/node_exporter /usr/local/bin/
 
-cat > Library/LaunchDaemons/io.prometheus.node_exporter.plist <<EOF
+cat > /Library/LaunchDaemons/io.prometheus.node_exporter.plist <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
