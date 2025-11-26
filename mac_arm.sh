@@ -1,8 +1,9 @@
 curl -o ~/Downloads/node_exporter-1.10.2.darwin-arm64.tar.gz -L https://github.com/prometheus/node_exporter/releases/download/v1.10.2/node_exporter-1.10.2.darwin-arm64.tar.gz
 cd ~/Downloads
-tar -xzf node_exporter-1.9.0.darwin-amd64.tar.gz
+tar -xzf node_exporter-1.10.2.darwin-arm64.tar.gz
 mkdir -p /usr/local/bin
-cp -n node_exporter-1.9.0.darwin-amd64/node_exporter /usr/local/bin/
+cp -n node_exporter-1.10.2.darwin-arm64/node_exporter /usr/local/bin/
+
 
 cat > /Library/LaunchDaemons/io.prometheus.node_exporter.plist <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
